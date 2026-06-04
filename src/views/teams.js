@@ -45,6 +45,7 @@ function renderBento() {
           <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm sticky top-4">
             <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
               <span class="material-symbols-outlined text-blue-600 text-[20px]" id="form-icon">person_add</span>
+              <h3 class="font-semibold text-slate-800" id="form-title">Agregar miembro</h3>
             </div>
             <form id="user-form" onsubmit="return false;" class="space-y-3">
               <input type="hidden" id="f-id" value=""/>

@@ -80,7 +80,10 @@ function buildHeader(currentUser) {
     </div>
     <div class="flex items-center gap-3">
       <button class="material-symbols-outlined text-slate-500 hover:bg-slate-100 p-2 rounded-full text-[20px]">notifications</button>
-      <div id="logout-btn" class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm cursor-pointer hover:bg-blue-200 transition-colors" title="Logout">${inicial}</div>
+      <span class="text-sm font-medium text-slate-700">${currentUser?.nombre || "Usuario"}</span>
+      <button id="logout-btn" class="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg text-sm font-medium transition-colors cursor-pointer">
+        <span class="material-symbols-outlined text-[16px]">Cerrar sesión</span>
+      </button>
     </div>
   </header>`;
 }
